@@ -4,7 +4,7 @@ git init
 git add --all
 git commit -m "initial"
 
-heroku create -s cedar -b https://github.com/ddollar/heroku-buildpack-multi.git
+heroku create -s cedar-14 -b https://github.com/ddollar/heroku-buildpack-multi.git
 
 app=`heroku apps:info -s | grep ^name=`
 app=${app:5}
